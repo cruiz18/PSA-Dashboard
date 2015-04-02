@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/dash_navi_bg"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="460dp"
+        android:background="@drawable/dashboard_bg">
+        <RelativeLayout 
+            android:id="@+id/dash_navi_relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp">
+            <ImageView 
+                android:id="@+id/dash_big_left_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_big_left_circle"/>
+            <TextView 
+                android:id="@+id/dash_navi_speed_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KM/H"
+                android:textColor="#AFDEFF"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="242dp"
+                android:textSize="25sp"/>
+            
+            <TextView 
+                android:id="@+id/dash_navi_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="107"
+                android:textColor="#fff"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="145dp"
+                android:textSize="60sp"/>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/dash_navi_relative2"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp">
+            <RelativeLayout
+                android:id="@+id/dash_big_right_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dash_big_right_circle"/>
+            
+           
+                
+            
+        </RelativeLayout>
+        
+        
+       
+        
+        
+ 
+    </RelativeLayout>
+
+</RelativeLayout>

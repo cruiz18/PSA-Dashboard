@@ -1,0 +1,404 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+    
+    <Button 
+        android:id="@+id/test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="navi"
+        android:visibility="invisible"
+        />
+    <Button 
+        android:id="@+id/test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:visibility="invisible"
+        android:text="music"/>
+    <Button 
+        android:id="@+id/test3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:visibility="invisible"
+        android:text="radio"/>
+    <Button 
+        android:id="@+id/test4"
+        android:layout_marginLeft="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="phone"/>
+    
+    <RelativeLayout 
+        android:id="@+id/dash_board_bg"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="460dp"
+        android:background="@drawable/dashboard_bg">
+        <RelativeLayout 
+            android:id="@+id/dash_relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp">
+
+            <ImageView 
+                android:id="@+id/dash_normal_left_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_left_circle"/>
+            
+            <ImageView 
+                android:id="@+id/dash_big_left_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_big_left_circle"
+               android:layout_marginTop="20dp"
+                android:visibility="invisible"/>
+            <TextView 
+                android:id="@+id/dash_speed_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KM/H"
+                android:textColor="#AFDEFF"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="247dp"
+                android:textSize="25sp"/>
+            
+            <TextView 
+                android:id="@+id/dash_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="107"
+                android:textColor="#fff"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="125dp"
+                android:textSize="70sp"/>
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/dash_relative2"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            android:layout_marginTop="40dp">
+            <RelativeLayout
+                android:id="@+id/dash_normal_right_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:background ="@drawable/dash_right_circle"/>
+            
+            
+           <Button 
+               android:id="@+id/dash_change_btn"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="260dp"
+               android:layout_marginLeft="40dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/dash_arrow_down"/>
+            <TextView 
+                android:id="@+id/dash_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导航"
+                android:textColor="#AFDEFF"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="242dp"
+                android:textSize="25sp"/>
+            <RelativeLayout 
+                android:id="@+id/dash_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:background="@drawable/dash_navi_icon"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="140dp"/>
+                
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/dash_navi_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_big_right_circle"/>
+            <TextView 
+                android:id="@+id/text_ju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:textSize="25sp"
+                android:textColor="#688296"
+                />
+            <TextView 
+                android:id="@+id/text_road_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四平路"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="50dp"
+                android:layout_alignBaseline="@+id/text_ju"
+                android:textSize="25sp"
+                android:textColor="#688296"/>
+            
+            <TextView 
+                android:id="@+id/text_road_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公里"
+                android:layout_centerHorizontal="true"
+                
+                android:layout_marginTop="220dp"
+                android:textSize="25sp"
+                android:textColor="#AFDEFF"/>
+            <TextView 
+                android:id="@+id/text_road_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2"
+                android:layout_centerHorizontal="true"
+                
+                android:layout_marginTop="120dp"
+                android:textSize="70sp"
+                android:textColor="#fff"/>
+            
+            
+        </RelativeLayout>
+        
+        
+        
+         <RelativeLayout 
+            android:id="@+id/dash_music_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/music_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_right_circle"/>
+            <ImageView 
+                android:id="@+id/music_shade"
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="90dp"
+                android:src="@drawable/dash_music_inner"/>
+            <TextView 
+                android:id="@+id/music_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lake of Fire"
+                android:textSize="25sp"
+                android:layout_marginTop="135dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"/>
+            <TextView 
+                android:id="@+id/music_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivira"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="175dp"
+                android:textColor="#688296"/>
+            <ImageView 
+                android:id="@+id/music_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/dash_radio_bar"/>
+            </RelativeLayout>
+        
+        
+        <RelativeLayout 
+            android:id="@+id/dash_radio_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/radio_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_right_circle"/>
+            <ImageView 
+                android:id="@+id/radio_bar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dash_radio_bar"/>
+            <ImageView 
+                android:id="@+id/radio_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dash_radio_dot"/>
+            <TextView 
+                android:id="@+id/text_radio_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="120dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="45sp"
+                android:text="87.9"/>
+            <TextView 
+                android:id="@+id/text_radio_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3A3E4C"
+                android:layout_marginLeft="255dp"
+                android:layout_alignBaseline="@+id/text_radio_mid"
+                android:textSize="35sp"
+                android:text="93"/>
+            <TextView 
+                android:id="@+id/text_radio_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3A3E4C"
+                 android:layout_alignBaseline="@+id/text_radio_mid"
+                android:textSize="35sp"
+                android:layout_marginLeft="35dp"
+                android:text="92"/>
+            <TextView 
+                android:id="@+id/text_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#AFDEFF"
+                android:textSize="25sp"
+                android:text="收音机"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="242dp"/>
+                
+            
+            
+            
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout 
+            android:id="@+id/mid_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true">
+            <ImageView 
+                android:id="@+id/dash_board_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dash_middle_icon"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView 
+                android:id="@+id/dash_gear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:textColor="#fff"
+                android:textSize="35sp"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/navi_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true">
+            
+            
+            <ImageView 
+                android:id="@+id/dash_compass_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dashboard_compass"/>
+            <TextView 
+                android:id="@+id/text_navi_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:textSize="30sp"/>
+            <TextView 
+                android:id="@+id/text_navi_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:textSize="50sp"/>
+              <TextView 
+                android:id="@+id/text_naviing_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="米"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="170dp"
+                android:layout_alignBaseline="@+id/text_navi_distance"
+                android:textColor="#617A8C"
+                android:textSize="25sp"/>
+            
+            <TextView 
+                android:id="@+id/text_navi_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="左转至曲阳路"
+                android:layout_marginTop="235dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#AFDEFF"
+                android:textSize="25sp"/>
+            
+            <ImageView
+                android:id="@+id/navi_dir_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="270dp"
+                android:src="@drawable/navi_turn_left_hl" />
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/navi_fuel_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dip"
+            android:layout_marginLeft="410dip"
+            android:visibility="invisible"
+            android:src="@drawable/fuel_alert"/>
+ 
+    </RelativeLayout>
+
+</RelativeLayout>
